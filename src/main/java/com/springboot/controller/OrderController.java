@@ -25,7 +25,7 @@ public class OrderController {
 	public Item query(@PathVariable("id") Long id) {
 		String itemUrl = "http://app-item/item/{id}";
 		Item result = restTemplate.getForObject(itemUrl, Item.class, id);
-		System.out.println("订单系统调用商品服务,result:" + result);
+		System.out.println("aaa订单系统调用商品服务,result:" + result);
 		return result;
 	}
 
